@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193E30E0C91CC66E13DF8474 /* Pods_ZagZigUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8C03DC199EF73CEEE35BFF /* Pods_ZagZigUITests.framework */; };
+		408F52AA8CAC9B2F942B6610 /* Pods_ZagZigTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF384D143F3AAD0CB1B106 /* Pods_ZagZigTests.framework */; };
 		EB012DF01CDF5CBA00F5E74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB012DEF1CDF5CBA00F5E74F /* AppDelegate.swift */; };
 		EB012DF71CDF5CBA00F5E74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB012DF51CDF5CBA00F5E74F /* Main.storyboard */; };
 		EB012DF91CDF5CBA00F5E74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB012DF81CDF5CBA00F5E74F /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 		EB012E241CDF687200F5E74F /* ShoppingMall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB012E231CDF687200F5E74F /* ShoppingMall.swift */; };
 		EB012E261CDF694B00F5E74F /* pageList.json in Resources */ = {isa = PBXBuildFile; fileRef = EB012E251CDF694B00F5E74F /* pageList.json */; };
 		EB012E281CDF8F5000F5E74F /* PageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB012E271CDF8F5000F5E74F /* PageDetailViewController.swift */; };
+		EB4F2DBF1CE4F59400461CCF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4F2DB21CE4F50700461CCF /* SQLite.framework */; };
 		EB756FD41CE16BAB00650AB4 /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB756FD31CE16BAB00650AB4 /* AnnotatedPhotoCell.swift */; };
 		EB756FD61CE16BBA00650AB4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB756FD51CE16BBA00650AB4 /* Photo.swift */; };
 		EB756FD81CE16C2B00650AB4 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB756FD71CE16C2B00650AB4 /* UIImage+Decompression.swift */; };
@@ -43,9 +46,66 @@
 			remoteGlobalIDString = EB012DEB1CDF5CBA00F5E74F;
 			remoteInfo = ZagZig;
 		};
+		EB4F2DB11CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		EB4F2DB31CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		EB4F2DB51CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		EB4F2DB71CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		EB4F2DB91CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		EB4F2DBB1CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		EB4F2DBD1CE4F50700461CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DE8907C651E7E7D1AB579A /* Pods-ZagZigTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZigTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZigTests/Pods-ZagZigTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2528E1F594B1D4D5A5887A30 /* Pods-ZagZigUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZigUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZigUITests/Pods-ZagZigUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34DDAA1FC4389C0AF114F52C /* Pods-ZagZig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZig.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZig/Pods-ZagZig.debug.xcconfig"; sourceTree = "<group>"; };
+		5519BA5EE5522B0E468C2CE2 /* Pods-ZagZig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZig.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZig/Pods-ZagZig.release.xcconfig"; sourceTree = "<group>"; };
+		6BDF384D143F3AAD0CB1B106 /* Pods_ZagZigTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZagZigTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6809BB66B988DA8F96CEF5 /* Pods-ZagZigTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZigTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZigTests/Pods-ZagZigTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C06890C19C2D8F45A784D3A /* Pods_ZagZig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZagZig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8C03DC199EF73CEEE35BFF /* Pods_ZagZigUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZagZigUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB012DEC1CDF5CBA00F5E74F /* ZagZig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZagZig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB012DEF1CDF5CBA00F5E74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB012DF61CDF5CBA00F5E74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +123,7 @@
 		EB012E231CDF687200F5E74F /* ShoppingMall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingMall.swift; sourceTree = "<group>"; };
 		EB012E251CDF694B00F5E74F /* pageList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pageList.json; sourceTree = "<group>"; };
 		EB012E271CDF8F5000F5E74F /* PageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDetailViewController.swift; sourceTree = "<group>"; };
+		EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		EB756FD31CE16BAB00650AB4 /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
 		EB756FD51CE16BBA00650AB4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EB756FD71CE16C2B00650AB4 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
@@ -71,6 +132,7 @@
 		EB756FDD1CE16F8A00650AB4 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		EB756FDF1CE16F9600650AB4 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		EB756FE11CE174EA00650AB4 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		FCDFD6CD5229986693016E27 /* Pods-ZagZigUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZagZigUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZagZigUITests/Pods-ZagZigUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4F2DBF1CE4F59400461CCF /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408F52AA8CAC9B2F942B6610 /* Pods_ZagZigTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +156,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193E30E0C91CC66E13DF8474 /* Pods_ZagZigUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5EA956A45D9894A8999EAFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34DDAA1FC4389C0AF114F52C /* Pods-ZagZig.debug.xcconfig */,
+				5519BA5EE5522B0E468C2CE2 /* Pods-ZagZig.release.xcconfig */,
+				01DE8907C651E7E7D1AB579A /* Pods-ZagZigTests.debug.xcconfig */,
+				7C6809BB66B988DA8F96CEF5 /* Pods-ZagZigTests.release.xcconfig */,
+				FCDFD6CD5229986693016E27 /* Pods-ZagZigUITests.debug.xcconfig */,
+				2528E1F594B1D4D5A5887A30 /* Pods-ZagZigUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA6F8D838593CC9320DF847C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */,
+				8C06890C19C2D8F45A784D3A /* Pods_ZagZig.framework */,
+				6BDF384D143F3AAD0CB1B106 /* Pods_ZagZigTests.framework */,
+				AB8C03DC199EF73CEEE35BFF /* Pods_ZagZigUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB012DE31CDF5CBA00F5E74F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +194,8 @@
 				EB012E051CDF5CBA00F5E74F /* ZagZigTests */,
 				EB012E101CDF5CBA00F5E74F /* ZagZigUITests */,
 				EB012DED1CDF5CBA00F5E74F /* Products */,
+				C5EA956A45D9894A8999EAFC /* Pods */,
+				DA6F8D838593CC9320DF847C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +252,20 @@
 			path = ZagZigUITests;
 			sourceTree = "<group>";
 		};
+		EB4F2DA81CE4F50700461CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F2DB21CE4F50700461CCF /* SQLite.framework */,
+				EB4F2DB41CE4F50700461CCF /* SQLiteTests iOS.xctest */,
+				EB4F2DB61CE4F50700461CCF /* SQLite.framework */,
+				EB4F2DB81CE4F50700461CCF /* SQLiteTests Mac.xctest */,
+				EB4F2DBA1CE4F50700461CCF /* SQLite.framework */,
+				EB4F2DBC1CE4F50700461CCF /* SQLiteTests tvOS.xctest */,
+				EB4F2DBE1CE4F50700461CCF /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB012E161CDF5CBA00F5E74F /* Build configuration list for PBXNativeTarget "ZagZig" */;
 			buildPhases = (
+				3662596DF87D9E7223D101D6 /* 📦 Check Pods Manifest.lock */,
 				EB012DE81CDF5CBA00F5E74F /* Sources */,
 				EB012DE91CDF5CBA00F5E74F /* Frameworks */,
 				EB012DEA1CDF5CBA00F5E74F /* Resources */,
+				9FA966FECB2113806A656039 /* 📦 Embed Pods Frameworks */,
+				AAAF87EF14BC4CFBCEA2A176 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +293,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB012E191CDF5CBA00F5E74F /* Build configuration list for PBXNativeTarget "ZagZigTests" */;
 			buildPhases = (
+				761AFCD735C996A490874D0B /* 📦 Check Pods Manifest.lock */,
 				EB012DFE1CDF5CBA00F5E74F /* Sources */,
 				EB012DFF1CDF5CBA00F5E74F /* Frameworks */,
 				EB012E001CDF5CBA00F5E74F /* Resources */,
+				42FC4AD35707A046298695F0 /* 📦 Embed Pods Frameworks */,
+				08717DA020ABCEA6DF3675A3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB012E1C1CDF5CBA00F5E74F /* Build configuration list for PBXNativeTarget "ZagZigUITests" */;
 			buildPhases = (
+				E6B7C2F46AA57A755A5CE06A /* 📦 Check Pods Manifest.lock */,
 				EB012E091CDF5CBA00F5E74F /* Sources */,
 				EB012E0A1CDF5CBA00F5E74F /* Frameworks */,
 				EB012E0B1CDF5CBA00F5E74F /* Resources */,
+				63F88AB1A7CD14F0A84C0E28 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +364,12 @@
 			mainGroup = EB012DE31CDF5CBA00F5E74F;
 			productRefGroup = EB012DED1CDF5CBA00F5E74F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB4F2DA81CE4F50700461CCF /* Products */;
+					ProjectRef = EB4F2DA71CE4F50700461CCF /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EB012DEB1CDF5CBA00F5E74F /* ZagZig */,
@@ -259,6 +378,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EB4F2DB21CE4F50700461CCF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = EB4F2DB11CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DB41CE4F50700461CCF /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = EB4F2DB31CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DB61CE4F50700461CCF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = EB4F2DB51CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DB81CE4F50700461CCF /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = EB4F2DB71CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DBA1CE4F50700461CCF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = EB4F2DB91CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DBC1CE4F50700461CCF /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = EB4F2DBB1CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB4F2DBE1CE4F50700461CCF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = EB4F2DBD1CE4F50700461CCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB012DEA1CDF5CBA00F5E74F /* Resources */ = {
@@ -289,6 +460,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08717DA020ABCEA6DF3675A3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZagZigTests/Pods-ZagZigTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3662596DF87D9E7223D101D6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42FC4AD35707A046298695F0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZagZigTests/Pods-ZagZigTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F88AB1A7CD14F0A84C0E28 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZagZigUITests/Pods-ZagZigUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		761AFCD735C996A490874D0B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA966FECB2113806A656039 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZagZig/Pods-ZagZig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAAF87EF14BC4CFBCEA2A176 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZagZig/Pods-ZagZig-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B7C2F46AA57A755A5CE06A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB012DE81CDF5CBA00F5E74F /* Sources */ = {
@@ -447,6 +741,7 @@
 		};
 		EB012E171CDF5CBA00F5E74F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DDAA1FC4389C0AF114F52C /* Pods-ZagZig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZagZig/Info.plist;
@@ -458,6 +753,7 @@
 		};
 		EB012E181CDF5CBA00F5E74F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5519BA5EE5522B0E468C2CE2 /* Pods-ZagZig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZagZig/Info.plist;
@@ -469,6 +765,7 @@
 		};
 		EB012E1A1CDF5CBA00F5E74F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DE8907C651E7E7D1AB579A /* Pods-ZagZigTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZagZigTests/Info.plist;
@@ -481,6 +778,7 @@
 		};
 		EB012E1B1CDF5CBA00F5E74F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6809BB66B988DA8F96CEF5 /* Pods-ZagZigTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZagZigTests/Info.plist;
@@ -493,6 +791,7 @@
 		};
 		EB012E1D1CDF5CBA00F5E74F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCDFD6CD5229986693016E27 /* Pods-ZagZigUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZagZigUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -504,6 +803,7 @@
 		};
 		EB012E1E1CDF5CBA00F5E74F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2528E1F594B1D4D5A5887A30 /* Pods-ZagZigUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZagZigUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
