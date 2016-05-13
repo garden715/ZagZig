@@ -32,8 +32,10 @@ class PhotoStreamViewController: UICollectionViewController {
     }
     
     func loadItems() {
-        let filePath = NSBundle.mainBundle().pathForResource("items", ofType: "json")
-        let data = NSData(contentsOfFile: filePath!)
+        //let filePath = NSBundle.mainBundle().pathForResource("http://52.38.132.199:3000/imgurl", ofType: "json")
+        let filePath = NSURL(string: "http://52.38.132.199:3000/imgurl")
+        
+        let data = NSData(contentsOfURL: filePath!)
         
         do {
             let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
@@ -51,15 +53,40 @@ class PhotoStreamViewController: UICollectionViewController {
     
     func readJSONObject(object : [[String : AnyObject]]) {
         for item in object {
-            guard let title = item["title"] as? String else { break }
+            guard let title = item["name"] as? String else { break }
             guard let price = item["price"] as? String else { break }
-            guard let image = item["imageName"] as? String else { break }
+            guard let image = item["img_thumb"] as? String else { break }
             print("\(title) - \(price)")
+
+            
+            
             photos.append(Photo.init(caption: "\(title)", comment: "\(price)", image: UIImage(named: "\(image)")!))
         }
+        
+        
+        
     }
     
-    
+    static func loadImageFromUrl(url: String, view: UIImageView){
+        // Create Url from string
+        let url = NSURL(string: url)!
+        
+        // Download task:
+        // - sharedSession = global NSURLCache, NSHTTPCookieStorage and NSURLCredentialStorage objects.
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (responseData, responseUrl, error) -> Void in
+            // if responseData is not null...
+            if let data = responseData{
+                
+                // execute in UI thread
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    view.image = UIImage(data: data)
+                })
+            }
+        }
+        
+        // Run task
+        task.resume()
+    }
 }
 
 extension PhotoStreamViewController {

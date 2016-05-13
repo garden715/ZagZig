@@ -54,7 +54,7 @@ class ShoppingMallsTableViewController: UIViewController, UITableViewDelegate, U
             guard let u = mall["u"] as? Int else { break }
             guard let baseUrl = mall["baseUrl"] as? String else { break }
             //print(u)
-            print(baseUrl)
+            //print(baseUrl)
             shoppinMalls.append(ShoppingMall(name: "\(u)", photo: UIImage(named: "1.png"), url: baseUrl)!)
         }
     }
