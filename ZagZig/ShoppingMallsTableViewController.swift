@@ -71,7 +71,7 @@ class ShoppingMallsTableViewController: UIViewController, UITableViewDelegate, U
         
         return cell
     }
-    
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PageDetail" {
             let indexPaths = ShoppingMallsTableView.indexPathsForSelectedRows!
@@ -82,6 +82,18 @@ class ShoppingMallsTableViewController: UIViewController, UITableViewDelegate, U
             vc.urlSource = "http://\(self.shoppinMalls[indexPath.row].url)"
         }
     }
-
+ */
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let uvc = self.storyboard!.instantiateViewControllerWithIdentifier("PageDetail") as! PageDetailViewController
+        
+        uvc.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+        uvc.urlSource = "http://\(self.shoppinMalls[indexPath.row].url)"
+        
+        self.presentViewController(uvc, animated: true, completion: {})
+        
+        
+    }
+    
  
 }

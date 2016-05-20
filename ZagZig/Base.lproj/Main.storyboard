@@ -37,7 +37,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QJ0-dx-vWg" id="nP0-dv-rgP">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Xe-SD-1dC">
@@ -81,7 +81,6 @@
                                             <outlet property="name" destination="0iV-Od-sem" id="acs-CZ-KBZ"/>
                                             <outlet property="photo" destination="5Xe-SD-1dC" id="Mng-h7-UcW"/>
                                             <outlet property="tags" destination="RNk-0X-jDt" id="Kbd-fX-nnH"/>
-                                            <segue destination="mxv-Aq-2S9" kind="show" identifier="PageDetail" id="FCR-xq-c5f"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -110,10 +109,29 @@
             </objects>
             <point key="canvasLocation" x="1374.5" y="-1202.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6k5-vV-aYs">
+            <objects>
+                <viewController id="fCz-EO-q3X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZqY-3o-srY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ylw-s9-nC2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4TJ-aE-TDG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTX-gH-1XE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.5" y="-1202.5"/>
+        </scene>
         <!--Page Detail View Controller-->
         <scene sceneID="euI-TE-RmP">
             <objects>
-                <viewController id="mxv-Aq-2S9" customClass="PageDetailViewController" customModule="ZagZig" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageDetail" id="mxv-Aq-2S9" customClass="PageDetailViewController" customModule="ZagZig" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Biv-vf-exY"/>
                         <viewControllerLayoutGuide type="bottom" id="p2R-HJ-fVT"/>
@@ -122,28 +140,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-9B-MGy">
+                                <rect key="frame" x="-4" y="20" width="383" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="UVo-dT-J2Z">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ZuR-MI-h8c">
+                                            <connections>
+                                                <action selector="dismiss:" destination="mxv-Aq-2S9" id="aL5-8o-fst"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m78-ZU-HHI">
-                                <rect key="frame" x="-16" y="0.0" width="407" height="667"/>
+                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="m78-ZU-HHI" secondAttribute="trailing" constant="-32" id="L3g-xX-2Dd"/>
-                            <constraint firstItem="p2R-HJ-fVT" firstAttribute="top" secondItem="m78-ZU-HHI" secondAttribute="bottom" constant="-49" id="S1i-Bb-CoG"/>
-                            <constraint firstItem="m78-ZU-HHI" firstAttribute="leading" secondItem="ypA-Mu-wYS" secondAttribute="leadingMargin" constant="-32" id="U0E-8B-Edn"/>
-                            <constraint firstItem="m78-ZU-HHI" firstAttribute="top" secondItem="Biv-vf-exY" secondAttribute="bottom" constant="-64" id="wQu-Ts-CpR"/>
+                            <constraint firstItem="sS7-9B-MGy" firstAttribute="leading" secondItem="ypA-Mu-wYS" secondAttribute="leadingMargin" constant="-20" id="JZf-I4-j2T"/>
+                            <constraint firstItem="sS7-9B-MGy" firstAttribute="top" secondItem="Biv-vf-exY" secondAttribute="bottom" id="OIs-5o-SUH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m78-ZU-HHI" secondAttribute="trailing" constant="-20" id="X73-c4-af4"/>
+                            <constraint firstItem="m78-ZU-HHI" firstAttribute="leading" secondItem="ypA-Mu-wYS" secondAttribute="leadingMargin" constant="-20" id="cTG-K5-HTw"/>
+                            <constraint firstItem="m78-ZU-HHI" firstAttribute="top" secondItem="Biv-vf-exY" secondAttribute="bottom" constant="44" id="hMh-35-VDz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sS7-9B-MGy" secondAttribute="trailing" constant="-20" id="p0Q-yy-VSB"/>
+                            <constraint firstItem="p2R-HJ-fVT" firstAttribute="top" secondItem="m78-ZU-HHI" secondAttribute="bottom" id="zTt-dM-aQj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rN4-IB-5eC">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="WL8-uC-6gQ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7tY-rW-DMn">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="webView" destination="m78-ZU-HHI" id="sLQ-0U-ooa"/>
@@ -151,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yd5-dr-Nfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856.5" y="-1202.5"/>
+            <point key="canvasLocation" x="2438.5" y="-1202.5"/>
         </scene>
         <!--My-->
         <scene sceneID="hOD-M6-oD0">

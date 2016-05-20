@@ -50,4 +50,10 @@ class PageDetailViewController: UIViewController {
         print("There was a problem loading the web page!")
     }
 
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    @IBAction func goToPage(sender: AnyObject) {
+        
+    }
 }
